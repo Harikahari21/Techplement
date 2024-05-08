@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Weather App</h1>
+      <div>
+        <input type="text" id="input" placeholder="Enter your city" />
+        <button type="submit" id="submit" class="search">Search</button>
+      </div>
+    </div>
+    <div class="box">
+      <main>
+        <div class="weather">
+          <h2 id="cityName"></h2>
+          <div class="temp-box">
+            <img src="/images/Weather-PNG-Images.png" alt="" />
+            <p id="temperature">Temperature is <span id="temp"> °</span></p>
+          </div>
+        </div>
+      </main>
+      <div>
+        <div class="row justify-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="h1">Temperature</h1>
+              </div>
+              <div class="card-body">
+                <img src="/images/hot.png" alt="" class="img" />
+                <ul class="list-unstyled">
+                  <li>Temperature is <span id="temp"> </span></li>
+                  <li>Min Temperature is <span id="min_temp"></span></li>
+                  <li>Max Temperature is <span id="max_temp"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="h1">Humidity Info</h1>
+              </div>
+              <div class="card-body">
+                <img src="/images/humidity.png" alt="" class="img" />
+                <ul class="list-unstyled">
+                  <li>Humidity is <span id="humidity"></span></li>
+                  <li>Feels like <span id="feels_like"></span></li>
+                  <li>Wind Speed is <span id="wind_speed"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="">Other Info</h1>
+              </div>
+              <div class="card-body">
+                <img src="/images/wind.png" alt="" class="img" />
+                <ul class="list-unstyled">
+                  <li>Wind Degrees is <span id="wind_degrees"></span></li>
+                  <li>Sunrise is <span id="sunrise"></span></li>
+                  <li>Sunset is <span id="sunset"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
